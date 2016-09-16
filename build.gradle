@@ -1,0 +1,16 @@
+apply plugin: 'maven'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+buildscript.repositories { mavenCentral() }
+
+repositories { mavenCentral() }
+
+dependencies {
+  testCompile 'org.springframework.boot:spring-boot-starter-test:1.4.0.RELEASE'
+
+  compile 'org.springframework.boot:spring-boot-starter:1.4.0.RELEASE'
+
+  compile 'org.bouncycastle:bcprov-jdk15on:1.55'
+  compile 'org.codehaus.groovy:groovy-all:2.4.7'
+}
